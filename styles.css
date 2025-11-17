@@ -1,0 +1,148 @@
+/* Grundfarben */
+:root {
+    --graphit: #333333;
+    --petrol: #1F4E4E;
+    --bronze: #B67C42;
+    --light: #F4F4F4;
+    --white: #ffffff;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: var(--light);
+    color: var(--graphit);
+    line-height: 1.6;
+}
+
+/* Navigation */
+.header {
+    background: var(--white);
+    padding: 20px 40px;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--graphit);
+    font-weight: 500;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--petrol);
+}
+
+/* Hero-Bereich */
+.hero {
+    text-align: center;
+    padding: 100px 30px;
+    background: var(--graphit);
+    color: var(--white);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    letter-spacing: 4px;
+}
+
+.hero h2 {
+    color: var(--bronze);
+    font-size: 1.5rem;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Buttons */
+.btn-primary {
+    background: var(--bronze);
+    color: var(--white);
+    padding: 12px 26px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.btn-primary:hover {
+    background: #996533;
+}
+
+.btn-secondary {
+    background: var(--petrol);
+    color: var(--white);
+    padding: 12px 26px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-secondary:hover {
+    background: #173a3a;
+}
+
+/* Bereiche */
+.section {
+    padding: 80px 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--petrol);
+}
+
+.angebot-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.angebot-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--graphit);
+    color: var(--white);
+}
+
+.footer a {
+    color: var(--bronze);
+    text-decoration: none;
+}
