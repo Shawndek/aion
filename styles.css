@@ -1,13 +1,24 @@
-/* Grundfarben */
+/* -------------------------------------------------
+   AION – Farbpalette (neu)
+------------------------------------------------- */
 :root {
-    --graphit: #333333;
-    --petrol: #1F4E4E;
-    --bronze: #B67C42;
-    --light: #F4F4F4;
+    --bronze: #8C4936;         /* Logo Bronze */
+    --bronze-ui: #A85A40;      /* Button / UI Bronze */
+    --bronze-soft: #C87A5D;
+
+    --petrol: #1A4444;
+    --petrol-light: #2D6666;
+
+    --anthrazit: #414141;
+    --anthrazit-light: #6A6A6A;
+
+    --warm-white: #F4F1EB;
     --white: #ffffff;
 }
 
-/* Reset */
+/* -------------------------------------------------
+   Reset
+------------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -16,16 +27,18 @@
 }
 
 body {
-    background: var(--light);
-    color: var(--graphit);
+    background: var(--warm-white);
+    color: var(--anthrazit);
     line-height: 1.6;
 }
 
-/* Navigation */
+/* -------------------------------------------------
+   Header / Navigation
+------------------------------------------------- */
 .header {
     background: var(--white);
-    padding: 20px 40px;
-    border-bottom: 1px solid #ddd;
+    padding: 15px 40px;
+    border-bottom: 1px solid var(--anthrazit-light);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -37,64 +50,118 @@ body {
     align-items: center;
 }
 
-.nav ul {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
-
-.nav a {
-    text-decoration: none;
-    color: var(--graphit);
-    font-weight: 500;
-}
-
 .logo {
     font-size: 1.7rem;
     font-weight: 700;
     color: var(--petrol);
 }
 
-/* Hero-Bereich */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--anthrazit);
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--bronze-soft);
+}
+
+/* Header CTA Button */
+.nav-cta {
+    font-size: 0.95rem;
+    padding: 10px 22px;
+    border-radius: 6px;
+}
+
+/* Responsive Navigation für kleine Bildschirme */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-cta {
+        margin-top: 10px;
+    }
+}
+.header.sticky {
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+
+
+/* -------------------------------------------------
+   Hero-Bereich
+------------------------------------------------- */
 .hero {
     text-align: center;
-    padding: 100px 30px;
-    background: var(--graphit);
+    padding: 120px 30px;           /* großzügiger Abstand */
+    background: var(--anthrazit);  /* dunkler, maskuliner Hintergrund */
     color: var(--white);
+    position: relative;
 }
 
 .hero h1 {
     font-size: 4rem;
     letter-spacing: 4px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .hero h2 {
-    color: var(--bronze);
-    font-size: 1.5rem;
-    margin-top: 10px;
+    font-size: 1.8rem;
+    color: var(--bronze);           /* Logo-Bronze */
+    margin-bottom: 20px;
     letter-spacing: 2px;
 }
 
 .hero p {
-    margin: 20px auto;
+    font-size: 1.1rem;
     max-width: 600px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+    color: var(--warm-white);
 }
 
-/* Buttons */
+.hero .btn-primary {
+    font-size: 1rem;
+    padding: 14px 32px;
+}
+
+.hero .btn-primary:hover {
+    transform: scale(1.05);
+}
+
+
+/* -------------------------------------------------
+   Buttons
+------------------------------------------------- */
 .btn-primary {
-    background: var(--bronze);
+    background: var(--bronze-ui);   /* neue Buttonfarbe */
     color: var(--white);
     padding: 12px 26px;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
-    transition: 0.2s;
+    transition: 0.25s;
     display: inline-block;
     margin-top: 15px;
 }
 
 .btn-primary:hover {
-    background: #996533;
+    background: var(--bronze);      /* dunkleres Bronze beim Hover */
 }
 
 .btn-secondary {
@@ -104,14 +171,16 @@ body {
     border-radius: 6px;
     border: none;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.25s;
 }
 
 .btn-secondary:hover {
-    background: #173a3a;
+    background: var(--petrol-light);
 }
 
-/* Bereiche */
+/* -------------------------------------------------
+   Section
+------------------------------------------------- */
 .section {
     padding: 80px 30px;
     max-width: 900px;
@@ -131,18 +200,24 @@ body {
 
 .angebot-list li {
     padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--anthrazit-light);
 }
 
-/* Footer */
+/* -------------------------------------------------
+   Footer
+------------------------------------------------- */
 .footer {
     text-align: center;
     padding: 40px 20px;
-    background: var(--graphit);
+    background: var(--anthrazit);
     color: var(--white);
 }
 
 .footer a {
-    color: var(--bronze);
+    color: var(--bronze-soft);
     text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--bronze-light);
 }
