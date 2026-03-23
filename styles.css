@@ -17,6 +17,13 @@
 }
 
 /* -------------------------------------------------
+   Smooth Scroll
+------------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* -------------------------------------------------
    Reset
 ------------------------------------------------- */
 * {
@@ -96,19 +103,18 @@ body {
         margin-top: 10px;
     }
 }
+
 .header.sticky {
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
-
-
 
 /* -------------------------------------------------
    Hero-Bereich
 ------------------------------------------------- */
 .hero {
     text-align: center;
-    padding: 120px 30px;           /* großzügiger Abstand */
-    background: var(--anthrazit);  /* dunkler, maskuliner Hintergrund */
+    padding: 120px 30px;
+    background: var(--anthrazit);
     color: var(--white);
     position: relative;
 }
@@ -122,7 +128,7 @@ body {
 
 .hero h2 {
     font-size: 1.8rem;
-    color: var(--bronze);           /* Logo-Bronze */
+    color: var(--bronze);
     margin-bottom: 20px;
     letter-spacing: 2px;
 }
@@ -144,12 +150,11 @@ body {
     transform: scale(1.05);
 }
 
-
 /* -------------------------------------------------
    Buttons
 ------------------------------------------------- */
 .btn-primary {
-    background: var(--bronze-ui);   /* neue Buttonfarbe */
+    background: var(--bronze-ui);
     color: var(--white);
     padding: 12px 26px;
     border-radius: 6px;
@@ -161,7 +166,8 @@ body {
 }
 
 .btn-primary:hover {
-    background: var(--bronze);      /* dunkleres Bronze beim Hover */
+    background: var(--bronze);
+    transform: translateY(-2px);
 }
 
 .btn-secondary {
@@ -182,7 +188,7 @@ body {
    Section
 ------------------------------------------------- */
 .section {
-    padding: 80px 30px;
+    padding: 100px 30px;
     max-width: 900px;
     margin: 0 auto;
 }
