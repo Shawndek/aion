@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AION – Klarheit. Energie. Balance.</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header class="header">
     <div class="nav">
-        <!-- Logo -->
         <div class="logo">
             <a href="#hero">
-                <img src="assets/logo_25_pure.png" alt="AION Logo" class="logo-img">
+                <img src="assets/AION_Logo_klein.png" alt="AION Logo" class="logo-img">
             </a>
         </div>
 
@@ -28,11 +30,13 @@
     </div>
 </header>
 
-
 <section class="hero" id="hero">
     <h1>AION</h1>
     <h2>Klarheit. Energie. Balance.</h2>
-    <p>Energiearbeit und bewusste Begleitung für Männer, die Stärke, Fokus und innere Ruhe suchen.</p>
+    <p>
+        Für Männer, die innerlich unruhig sind, viel tragen – 
+        und wieder Klarheit, Fokus und echte innere Stärke entwickeln wollen.
+    </p>
 
     <a href="#termin" class="btn-primary">Termin buchen</a>
 </section>
@@ -41,29 +45,116 @@
     <h3>Über mich</h3>
     <p>
         Mein Name ist Shawn Kennedy. Ich begleite Menschen, die Klarheit im Geist,
-        Energie im Körper und Balance im Alltag suchen. Dabei arbeite ich mit
-        achtsamen Energie- und Aufmerksamkeitsmethoden ohne Ausübung von Heilkunde.
+        Energie im Körper und Balance im Alltag suchen.
+    </p>
+
+    <p>
+        Meine Arbeit ersetzt keine medizinische oder therapeutische Behandlung.
+        Sie dient der bewussten Selbstwahrnehmung und inneren Ausrichtung.
     </p>
 </section>
 
 <section id="angebot" class="section">
     <h3>Angebot</h3>
-    <ul class="angebot-list">
-        <li>1:1 Energiearbeit</li>
-        <li>Begleitung bei Stress und Unruhe</li>
-        <li>Achtsamkeits- und Fokusübungen</li>
-        <li>Energetische Balance-Sitzungen</li>
-    </ul>
+
+    <div class="accordion">
+
+        <div class="accordion-item">
+            <button class="accordion-header">Energie-Check-up</button>
+            <div class="accordion-content">
+                <p>
+                    Ein kurzer, unkomplizierter Einstieg in den eigenen Energiezustand.
+                    Durch einen energetischen Scan und gezielte Testmethoden werden mögliche Ungleichgewichte sichtbar gemacht und erste Impulse für Balance gegeben.
+                    Ideal für alle, die Orientierung oder Prävention suchen.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header">Intensiv-Session</button>
+            <div class="accordion-content">
+                <p>
+                   Die Intensiv-Session verbindet ein tiefgehendes Anamnesegespräch, einen energetischen Scan und individuell abgestimmte Methoden.
+            Blockaden werden erkannt, reflektiert und durch gezielte Impulse stabilisiert.
+            Der Fokus liegt auf nachhaltiger innerer Balance, Klarheit und persönlicher Weiterentwicklung.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header">Chakra Reinigung & Ausrichtung</button>
+            <div class="accordion-content">
+                <p>
+                    Gezielte Arbeit an den Energiezentren für mehr Klarheit, Vitalität und Harmonie.
+                    Erlebe, wie die Ausrichtung deiner Chakren die Balance im Alltag unterstützen kann.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header">Mikronährstoff-Check / Unverträglichkeiten</button>
+            <div class="accordion-content">
+                <p>
+                    Kinesiologische Wahrnehmung individueller Reaktionen auf Mikronährstoffe oder mögliche Unverträglichkeiten.
+                    Dient der Orientierung und bewussteren Selbstwahrnehmung.
+                    Kann eigenständig gebucht werden oder in eine 1:1 Session integriert werden.
+                </p>
+            </div>
+        </div>
+
+    </div>
 </section>
 
+  <!-- =========================
+     TERMINBUCHUNG BLOCK START
+========================= -->
 <section id="termin" class="section">
     <h3>Termin buchen</h3>
-    <p>Buche deinen Termin direkt online:</p>
 
-    <!-- Hier wird später cal.com eingebunden -->
-    <div id="bookingContainer">
-        <button id="openBooking" class="btn-secondary">Buchungsfenster öffnen</button>
-    </div>
+  
+
+<div class="booking-container">
+
+  <!-- Auswahl der Angebote (Bulletpoints / Radio Buttons) -->
+  <div class="service-selection">
+    <label>
+      <input type="radio" name="service" value="energieCheck">
+      Energie-Check
+    </label><br>
+
+    <label>
+      <input type="radio" name="service" value="intensivSession">
+      Intensiv-Session
+    </label><br>
+
+    <label>
+      <input type="radio" name="service" value="chakraReinigung">
+      Chakra-Reinigung
+    </label>
+  </div>
+
+  <!-- Buchungsbutton -->
+  <button onclick="openCalendly()" class="booking-button">
+    Buchungsfenster öffnen
+  </button>
+
+</div>
+
+</section>
+<!-- =========================
+     TERMINBUCHUNG BLOCK ENDE
+========================= -->
+<section id="kontakt" class="section">
+    <h3>Kontakt</h3>
+
+    <p>
+        Du hast Fragen oder möchtest vorab etwas klären?<br><br>
+        Schreib mir gerne eine E-Mail:
+    </p>
+
+    <a href="mailto:sdek@gmx.de" class="btn-secondary">
+        E-Mail senden
+    </a>
 </section>
 
 <footer class="footer">
@@ -75,6 +166,5 @@
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>

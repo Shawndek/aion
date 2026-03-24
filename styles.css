@@ -1,13 +1,15 @@
 /* -------------------------------------------------
-   AION – Farbpalette (neu)
+   AION – Farbpalette (angepasst: Gold & helleres Petrol)
 ------------------------------------------------- */
 :root {
-    --bronze: #8C4936;         /* Logo Bronze */
-    --bronze-ui: #A85A40;      /* Button / UI Bronze */
-    --bronze-soft: #C87A5D;
+    /* GOLD statt Bronze */
+    --bronze: #C9A34E;         /* edles Gold */
+    --bronze-ui: #D4AF37;      /* klassisches Gold für Buttons */
+    --bronze-soft: #E6C873;    /* helles Gold */
 
-    --petrol: #1A4444;
-    --petrol-light: #2D6666;
+    /* PETROL leicht heller */
+    --petrol: #245555;
+    --petrol-light: #3A7A7A;
 
     --anthrazit: #414141;
     --anthrazit-light: #6A6A6A;
@@ -87,7 +89,7 @@ body {
     border-radius: 6px;
 }
 
-/* Responsive Navigation für kleine Bildschirme */
+/* Responsive Navigation */
 @media (max-width: 768px) {
     .nav {
         flex-direction: column;
@@ -116,7 +118,6 @@ body {
     padding: 120px 30px;
     background: var(--anthrazit);
     color: var(--white);
-    position: relative;
 }
 
 .hero h1 {
@@ -154,7 +155,7 @@ body {
    Buttons
 ------------------------------------------------- */
 .btn-primary {
-    background: var(--bronze-ui);
+    background: linear-gradient(135deg, var(--bronze-ui), var(--bronze)); /* ✨ Feinschliff */
     color: var(--white);
     padding: 12px 26px;
     border-radius: 6px;
@@ -166,7 +167,7 @@ body {
 }
 
 .btn-primary:hover {
-    background: var(--bronze);
+    background: linear-gradient(135deg, var(--bronze), var(--bronze-soft));
     transform: translateY(-2px);
 }
 
@@ -201,7 +202,6 @@ body {
 
 .angebot-list {
     list-style: none;
-    padding-left: 0;
 }
 
 .angebot-list li {
@@ -225,5 +225,69 @@ body {
 }
 
 .footer a:hover {
-    color: var(--bronze-light);
+    color: var(--bronze-soft); /* ✔ Fehler behoben */
+}
+
+/* -------------------------------------------------
+   Accordion
+------------------------------------------------- */
+.accordion {
+    margin-top: 30px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--anthrazit-light);
+}
+
+.accordion-header {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 18px 0;
+    cursor: pointer;
+    color: var(--petrol);
+    transition: 0.2s;
+}
+
+.accordion-header:hover {
+    color: var(--bronze);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content p {
+    padding-bottom: 20px;
+    color: var(--anthrazit);
+}
+
+/* -------------------------------------------------
+   TERMINBUCHUNG
+------------------------------------------------- */
+.booking-container {
+    max-width: 300px;
+}
+
+.service-selection {
+    margin-bottom: 10px;
+}
+
+.booking-button {
+    background: var(--petrol);
+    color: var(--white);
+    padding: 12px 26px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.booking-button:hover {
+    background: var(--petrol-light);
 }
