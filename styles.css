@@ -121,10 +121,10 @@ body {
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     letter-spacing: 4px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .hero h2 {
@@ -155,7 +155,7 @@ body {
    Buttons
 ------------------------------------------------- */
 .btn-primary {
-    background: linear-gradient(135deg, var(--bronze-ui), var(--bronze)); /* ✨ Feinschliff */
+    background: linear-gradient(135deg, var(--bronze-ui), var(--bronze));
     color: var(--white);
     padding: 12px 26px;
     border-radius: 6px;
@@ -185,6 +185,12 @@ body {
     background: var(--petrol-light);
 }
 
+#kontakt .btn-secondary {
+    display: inline-block;
+    margin-top: 12px;
+    text-align: center;
+}
+
 /* -------------------------------------------------
    Section
 ------------------------------------------------- */
@@ -198,15 +204,6 @@ body {
     font-size: 2rem;
     margin-bottom: 20px;
     color: var(--petrol);
-}
-
-.angebot-list {
-    list-style: none;
-}
-
-.angebot-list li {
-    padding: 10px 0;
-    border-bottom: 1px solid var(--anthrazit-light);
 }
 
 /* -------------------------------------------------
@@ -225,11 +222,11 @@ body {
 }
 
 .footer a:hover {
-    color: var(--bronze-soft); /* ✔ Fehler behoben */
+    color: var(--bronze-soft);
 }
 
 /* -------------------------------------------------
-   Accordion
+   Accordion / Angebotssection
 ------------------------------------------------- */
 .accordion {
     margin-top: 30px;
@@ -268,6 +265,29 @@ body {
 }
 
 /* -------------------------------------------------
+   Angebots Meta (Zeit & Preis)
+------------------------------------------------- */
+.angebot-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    font-size: 0.95rem;
+}
+
+.angebot-meta .dauer {
+    color: var(--anthrazit-light);
+}
+
+.angebot-meta .preis {
+    color: var(--petrol);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* -------------------------------------------------
    TERMINBUCHUNG
 ------------------------------------------------- */
 .booking-container {
@@ -285,6 +305,9 @@ body {
     border-radius: 6px;
     border: none;
     cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
     transition: 0.25s;
 }
 
