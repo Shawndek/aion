@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AION – Klarheit. Energie. Balance.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="#hero">
+                <img src="assets/AION_Logo_klein.png" alt="AION Logo" class="logo-img">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#hero">Start</a></li>
+            <li><a href="#angebot">Angebot</a></li>
+            <li><a href="#termin">Termin</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+    ☰
+</button>
+
+        <a href="#termin" class="btn-primary nav-cta">Termin buchen</a>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <h1>Mehr Ruhe im Alltag – und wieder vorankommen in deinem Leben</h1>
+
+            <p class="lead">
+                Fühlst du dich gestresst, innerlich unruhig oder irgendwie festgefahren?
+                Als würdest du auf der Stelle treten, obwohl du eigentlich weiter willst?
+            </p>
+
+            <p>
+                In meiner Arbeit unterstütze ich dich dabei, wieder zur Ruhe zu kommen,
+                klarer zu sehen und neue Schritte für dich zu erkennen.
+            </p>
+
+            <p>
+                Ruhig, verständlich und ganz auf dich abgestimmt.
+            </p>
+
+            <p class="cta-text">
+                Buche jetzt deine persönliche Auszeit im Raum Würzburg
+            </p>
+
+            <a href="#termin" class="btn-primary">Termin vereinbaren</a>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="Foto_Shawn.png" alt="Shawn Kennedy">
+        </div>
+
+    </div>
+</section>
+
+<section id="angebot" class="section">
+    <h3>Angebot</h3>
+
+    <div class="accordion">
+
+        <div class="accordion-item">
+            <button class="accordion-header">Energie-Check-up</button>
+            <div class="accordion-content">
+                <p>
+                    In dieser kurzen Sitzung spüre ich deinen aktuellen Energiezustand, insbesondere die Balance 
+                    deiner Chakren. Gegebenenfalls kommen kinesiologische Muskeltests, Radiästhesie und ein kurzes Gespräch zum Einsatz,
+                    um mögliche Ungleichgewichte wahrzunehmen. Die Sitzung dient der Orientierung und Bewusstwerdung deines Energieflusses.
+                </p>
+                <div class="angebot-meta">
+                    <span class="dauer">ca. 30 Minuten</span>
+                    <span class="preis">45 €</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header">Intensiv-Session</button>
+            <div class="accordion-content">
+                <p>
+                    Die Intensiv-Session verbindet ein tiefgehendes Anamnesegespräch, einen energetischen Scan und individuell abgestimmte Methoden.
+                    Blockaden werden erkannt, reflektiert und durch gezielte Impulse stabilisiert.
+                    Der Fokus liegt auf nachhaltiger innerer Balance, Klarheit und persönlicher Weiterentwicklung.
+                </p>
+                <div class="angebot-meta">
+                    <span class="dauer">ca. 90 Minuten +</span>
+                    <span class="preis">95 €</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header">Chakra Reinigung & Ausrichtung</button>
+            <div class="accordion-content">
+                <p>
+                    Gezielte Arbeit an den Energiezentren für mehr Klarheit, Vitalität und Harmonie.
+                    Erlebe, wie die Ausrichtung deiner Chakren die Balance im Alltag unterstützen kann.
+                </p>
+                <div class="angebot-meta">
+                    <span class="dauer">ca. 60 Minuten</span>
+                    <span class="preis">75 €</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header">Mikronährstoff-Check / Unverträglichkeiten</button>
+            <div class="accordion-content">
+                <p>
+                    Kinesiologische Wahrnehmung individueller Reaktionen auf Mikronährstoffe oder mögliche Unverträglichkeiten.
+                    Dient der Orientierung und bewussteren Selbstwahrnehmung.
+                    Kann eigenständig gebucht werden oder in eine 1:1 Session integriert werden.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+  <!-- =========================
+     TERMINBUCHUNG BLOCK START
+========================= -->
+<section id="termin" class="section">
+    <h3>Termin buchen</h3>
+
+  
+
+<div class="booking-container">
+
+  <!-- Auswahl der Angebote (Bulletpoints / Radio Buttons) -->
+  <div class="service-selection">
+    <label>
+      <input type="radio" name="service" value="energieCheck">
+      Energie-Check
+    </label><br>
+
+    <label>
+      <input type="radio" name="service" value="intensivSession">
+      Intensiv-Session
+    </label><br>
+
+    <label>
+      <input type="radio" name="service" value="chakraReinigung">
+      Chakra-Reinigung
+    </label>
+  </div>
+
+  <!-- Buchungsbutton -->
+  <button onclick="openCalendly()" class="booking-button">
+    Buchungsfenster öffnen
+  </button>
+
+</div>
+
+</section>
+<!-- =========================
+     TERMINBUCHUNG BLOCK ENDE
+========================= -->
+<section id="kontakt" class="section">
+    <h3>Kontakt</h3>
+
+    <p>
+        Du hast Fragen oder möchtest vorab etwas klären?<br>
+        Schreib mir gerne eine E-Mail:
+    </p>
+
+    <a href="mailto:sdek@gmx.de" class="btn-secondary">
+        E-Mail senden
+    </a>
+</section>
+
+<footer class="footer">
+    <p>© 2026 AION – Klarheit. Energie. Balance.</p>
+    <p>
+        <a href="impressum.html">Impressum</a> |
+        <a href="datenschutz.html">Datenschutz</a>
+    </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

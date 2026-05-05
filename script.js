@@ -50,7 +50,7 @@ accordionHeaders.forEach(header => {
 
 const calendlyLinks = {
   energieCheck: "https://calendly.com/shawndek84/30min",
-  intensivSession: "https://calendly.com/shawndek84/new-meeting",
+  intensivSession: "https://calendly.com/shawndek84/chakra-reinigung-und-ausrichtung",
   chakraReinigung: "https://calendly.com/shawndek84/chakra-reinigung-und-ausrichtung"
 };
 
@@ -74,3 +74,14 @@ function openCalendly() {
     url: url + "?hide_event_type_details=1"
   });
 }
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+    });
+});
