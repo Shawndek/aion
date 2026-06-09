@@ -1,0 +1,20 @@
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Backups
+backup/
+*.bak
+*.old
+
+# Logs
+*.log
+
+# Sensible Daten
+.env
+
+#Archiv
+.Archiv/
