@@ -6,339 +6,288 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AION – Lebenszeit. Raum für Entwicklung.</title>
 
-    <title>AION – Klarheit. Energie. Balance.</title>
-
+    <link rel="icon" type="image/png" href="assets/icons/AION_Favicon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- =========================
-HEADER
-========================= -->
 <header class="header">
     <div class="nav">
-
         <div class="logo">
             <a href="#start">
-                <img src="assets/AION_Logo_klein.png" alt="AION Logo" class="logo-img">
+                <img src="assets/icons/AION_Favicon.png" alt="AION Logo" class="logo-img">
             </a>
         </div>
 
-        <ul class="nav-links">
+        <ul class="nav-links" id="navLinks">
             <li><a href="#start">Start</a></li>
-            <li><a href="#angebot">Angebot</a></li>
-            <li><a href="#termin">Termin</a></li>
+            <li><a href="#aion">AION</a></li>
+            <li><a href="#ueber-mich">Über mich</a></li>
+            <li><a href="#erstgespraech">Erstgespräch</a></li>
+            <li><a href="#angebot">Begleitung</a></li>
+            <li><a href="#methoden">Methoden</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
         </ul>
 
-        <button class="hamburger" id="hamburger">☰</button>
+        <button class="hamburger" id="hamburger" aria-label="Menü öffnen">☰</button>
 
-        <a href="#termin" class="btn-primary nav-cta">Termin buchen</a>
-
+        <a href="#erstgespraech" class="btn-primary nav-cta">
+            Kostenloses Erstgespräch
+        </a>
     </div>
 </header>
 
-<!-- =========================
-HERO
-========================= -->
 <section id="start" class="hero">
-
     <div class="hero-content">
-
         <div class="hero-text">
+            <p class="hero-brand">AION</p>
 
-            <h1>AION - Lebenszeit, zeitloser Raum für Entwicklung und Entspannung</h1>
+            <h1>Lebenszeit.<br>Raum für Entwicklung.</h1>
+
+            <p class="hero-subline">
+                Klarheit finden. Balance stärken. Entwicklung ermöglichen.
+            </p>
 
             <p class="lead">
-                Mehr Ruhe im Alltag – und wieder vorankommen in deinem Leben 
-                Fühlst du dich gestresst, innerlich unruhig oder irgendwie festgefahren?
-                Als würdest du auf der Stelle treten, obwohl du eigentlich weiter willst?
+                Persönliche Begleitung für Menschen, die innehalten,
+                sich neu ausrichten und ihren eigenen Weg bewusster gestalten möchten.
             </p>
 
-            <p>
-                In meiner Arbeit unterstütze ich dich dabei, wieder zur Ruhe zu kommen,
-                klarer zu sehen und neue Schritte für dich zu erkennen.
-            </p>
-
-            <p>
-                Ruhig, verständlich und ganz auf dich abgestimmt.
-            </p>
-
-            <p class="cta-text">
-                👉 Buche jetzt deine persönliche Auszeit im Raum Würzburg
-            </p>
-
-            <a href="#termin" class="btn-primary">Termin vereinbaren</a>
-
+            <a href="#erstgespraech" class="btn-primary">
+                Kostenloses Erstgespräch
+            </a>
         </div>
-
-        <div class="hero-image">
-            <img src="Foto_Shawn.png" alt="Shawn Kennedy Portrait">
-        </div>
-
     </div>
 </section>
 
-<!-- =========================
-INTRO / EMPFANG
-========================= -->
-<section class="section">
-
-    <h2>Ein Raum für dich – zum Ankommen und Sortieren</h2>
+<section id="aion" class="section">
+    <h2>Was ist AION?</h2>
 
     <p>
-        Wenn der Alltag laut wird, Gedanken kreisen oder sich innerlich etwas blockiert anfühlt,
-        entsteht oft das Gefühl, den eigenen Zugang zu sich selbst zu verlieren.
+        AION ist ein Angebot für persönliche Entwicklung, innere Balance
+        und bewusste Neuorientierung.
     </p>
 
     <p>
-        Hier beginnt der erste Schritt: Ruhe, Wahrnehmung und ein klarerer Blick auf das,
-        was gerade in dir passiert.
+        Wenn der Alltag laut wird, Entscheidungen schwerfallen oder das Gefühl entsteht,
+        auf der Stelle zu treten, begleite ich dich dabei, innezuhalten,
+        klarer wahrzunehmen und neue Orientierung zu finden.
     </p>
 
+    <p>
+        Im Mittelpunkt steht nicht eine feste Methode, sondern das,
+        was dich in deiner aktuellen Situation stärkt.
+    </p>
 </section>
 
-<!-- =========================
-FÜR WEN
-========================= -->
-<section class="section">
+<section class="section values-section">
+    <h2>Wofür AION steht</h2>
 
-    <h2>Für wen ist das gedacht?</h2>
+    <div class="values-grid">
+        <div class="value-card">
+            <span class="gold-dot"></span>
+            <h3>Klarheit</h3>
+            <p>Eigene Gedanken, Bedürfnisse und innere Muster bewusster wahrnehmen.</p>
+        </div>
 
-    <ul class="clean-list">
-        <li>im Alltag viel Stress hast und schlecht abschalten kannst</li>
-        <li>dich innerlich blockiert oder festgefahren fühlst</li>
-        <li>immer wieder an denselben Punkten hängen bleibst</li>
-        <li>das Gefühl hast, nicht richtig voranzukommen</li>
-        <li>dir mehr Klarheit und Entwicklung für dein Leben wünschst</li>
-    </ul>
+        <div class="value-card">
+            <span class="gold-dot"></span>
+            <h3>Balance</h3>
+            <p>Zur Ruhe kommen, Stabilität stärken und wieder mehr Verbindung zu sich selbst finden.</p>
+        </div>
 
+        <div class="value-card">
+            <span class="gold-dot"></span>
+            <h3>Orientierung</h3>
+            <p>Den nächsten Schritt erkennen und den eigenen Weg bewusster gestalten.</p>
+        </div>
+    </div>
 </section>
 
-<!-- =========================
-WAS PASSIERT
-========================= -->
-<section class="section">
+<section id="ueber-mich" class="section about-section">
+    <div class="about-content">
+        <div class="about-image">
+            <img src="assets/images/Foto_Shawn.jpg" alt="Shawn Kennedy">
+        </div>
 
-    <h2>Was passiert in einer Sitzung?</h2>
+        <div class="about-text">
+            <h2>Über mich</h2>
 
-    <p>
-        Du bekommst einen Raum, in dem du zur Ruhe kommen kannst und gleichzeitig Klarheit für dich gewinnst.
-    </p>
+            <p>Ich bin Shawn Kennedy.</p>
 
-    <p>Gemeinsam schauen wir:</p>
+            <p>
+                Mich interessiert, wie Menschen wieder mehr Klarheit, Ruhe
+                und Zugang zu ihren eigenen Ressourcen finden können.
+            </p>
 
-    <ul class="clean-list">
-        <li>wo du gerade stehst</li>
-        <li>was dich möglicherweise zurückhält</li>
-        <li>was sich verändern darf</li>
-    </ul>
+            <p>
+                Mit AION möchte ich einen Rahmen schaffen, in dem Entwicklung ohne Druck
+                stattfinden darf – achtsam, klar und auf Augenhöhe.
+            </p>
 
-    <p>
-        Dabei geht es nicht um Druck oder „höher, schneller, weiter“,
-        sondern darum, dass du wieder Zugang zu dir selbst bekommst.
-    </p>
-
+            <p>
+                Dabei verbinde ich unterschiedliche Ansätze und orientiere mich immer daran,
+                was für den jeweiligen Menschen sinnvoll und stimmig ist.
+            </p>
+        </div>
+    </div>
 </section>
 
-<!-- =========================
-WAS BRINGT ES
-========================= -->
-<section class="section">
-
-    <h2>Was bringt dir das?</h2>
-
-    <ul class="clean-list">
-        <li>mehr innere Ruhe</li>
-        <li>ein klareres Gefühl für dich selbst</li>
-        <li>das Gefühl, wieder voranzukommen</li>
-        <li>mehr Vertrauen in deine Entscheidungen</li>
-        <li>neue Perspektiven für deinen Weg</li>
-    </ul>
-
-</section>
-
-<!-- =========================
-ENTWICKLUNG
-========================= -->
-<section class="section">
-
-    <h2>Persönliche Entwicklung, die sich echt anfühlt</h2>
+<section id="erstgespraech" class="section booking-section">
+    <h2>Der erste Schritt</h2>
 
     <p>
-        Veränderung muss nicht kompliziert sein.
-        Oft beginnt sie damit, sich selbst wieder besser zu verstehen.
+        Du musst nicht bereits alle Antworten kennen.
     </p>
 
     <p>
-        Wenn du dich gerade festgefahren fühlst, kann genau das der Moment sein,
-        an dem sich etwas neu ausrichtet.
+        Manchmal genügt die Entscheidung, dir bewusst Zeit für dich zu nehmen
+        und neue Perspektiven zuzulassen.
     </p>
-
-</section>
-
-<!-- =========================
-ORT
-========================= -->
-<section class="section">
-
-    <h2>Vor Ort in Würzburg</h2>
 
     <p>
-        Die Sitzungen finden aktuell im Raum Würzburg statt –
-        persönlich, ruhig und ohne Ablenkung.
+        Das erste telefonische Gespräch ist kostenlos, unverbindlich
+        und dauert ungefähr 30 Minuten.
     </p>
 
+    <div class="booking-selection">
+        <label class="booking-option">
+            <input type="radio" name="service" value="erstgespraech" checked>
+            <div class="booking-card">
+                <span class="title">Kostenloses Erstgespräch</span>
+                <span class="meta">telefonisch · ca. 30 Minuten · unverbindlich</span>
+            </div>
+        </label>
+    </div>
+
+    <button class="booking-button" onclick="openCalendlyIntro()">
+        Kostenloses Erstgespräch buchen
+    </button>
 </section>
 
-<!-- =========================
-ANGEBOT (DEIN BESTEHENDER BLOCK)
-========================= -->
-<section id="angebot" class="section">
+<section id="angebot" class="section offer-section">
+    <h2>Persönliche Begleitung</h2>
 
-    <h2>Angebot</h2>
+    <p>
+        Jede Sitzung richtet sich nach deinem Anliegen und deiner aktuellen Situation.
+    </p>
+
+    <p>
+        Wir schauen gemeinsam, wo du stehst, was dich beschäftigt
+        und welche Form der Unterstützung gerade sinnvoll ist.
+    </p>
+
+    <p>
+        Je nach Bedarf können Gespräch, energetische Wahrnehmung, Reiki,
+        Chakrenarbeit, kinesiologische Impulse oder Reflexionsfragen einfließen.
+    </p>
+
+    <div class="offer-box">
+        <div>
+            <h3>1:1 Begleitung</h3>
+            <p>60 Minuten · 75 €</p>
+            <p class="offer-note">
+                Buchung nach dem kostenlosen Erstgespräch oder nach persönlicher Absprache.
+            </p>
+        </div>
+
+        <button class="booking-button" onclick="openCalendlySession()">
+            Termin buchen
+        </button>
+    </div>
+</section>
+
+<section id="methoden" class="section methods-section">
+    <h2>Methoden & Erfahrung</h2>
+
+<p>
+    In meine Arbeit fließen verschiedene Ansätze ein, unter anderem
+    energetische Wahrnehmung, Reiki, Chakrenarbeit, kinesiologische Testverfahren,
+    lösungsorientierte Reflexion sowie Erfahrungen aus Weiterbildungen
+    im Bereich Coaching und Persönlichkeitsentwicklung.
+</p>
+
+<p>
+    Diese Methoden und Erfahrungen stehen nicht im Vordergrund.
+    Sie dienen dazu, dich individuell und passend zu deinem Anliegen zu begleiten
+    und Impulse für mehr Klarheit, Balance und Entwicklung zu geben.
+</p>
+    </p>
 
     <div class="accordion">
-
         <div class="accordion-item">
-            <button class="accordion-header">Energie-Check-up</button>
+            <button class="accordion-header">Energetische Wahrnehmung</button>
             <div class="accordion-content">
-                <p>...</p>
+                <p>
+                    Eine achtsame Wahrnehmung dessen, was sich in deiner aktuellen Situation zeigt.
+                    Sie kann helfen, Themen, Spannungen oder innere Dynamiken bewusster zu machen.
+                </p>
             </div>
         </div>
 
         <div class="accordion-item">
-            <button class="accordion-header">Intensiv-Session</button>
+            <button class="accordion-header">Reiki & Chakrenarbeit</button>
             <div class="accordion-content">
-                <p>...</p>
+                <p>
+                    Unterstützende energetische Methoden, die zur Ruhe, Zentrierung
+                    und bewussteren Selbstwahrnehmung beitragen können.
+                </p>
             </div>
         </div>
 
         <div class="accordion-item">
-            <button class="accordion-header">Chakra Reinigung & Ausrichtung</button>
+            <button class="accordion-header">Kinesiologische Impulse</button>
             <div class="accordion-content">
-                <p>...</p>
+                <p>
+                    Kinesiologische Testverfahren können ergänzend eingesetzt werden,
+                    um Hinweise und Impulse für die weitere Arbeit zu gewinnen.
+                </p>
             </div>
         </div>
 
         <div class="accordion-item">
-            <button class="accordion-header">Mikronährstoff-Check / Unverträglichkeiten</button>
+            <button class="accordion-header">Reflexion & Entwicklung</button>
             <div class="accordion-content">
-                <p>...</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- =========================
-TERMIN
-========================= 
-<section id="termin" class="section">
-
-    <h2>Dein erster Schritt</h2>
-
     <p>
-        Du musst nicht genau wissen, wie es weitergeht.
-        Es reicht, dass du spürst: so wie es ist, soll es nicht bleiben.
+        Erfahrungen aus Weiterbildungen im Bereich Coaching und
+        Persönlichkeitsentwicklung fließen unterstützend in meine Arbeit ein.
+        Durch gezielte Fragen und gemeinsame Reflexion können neue Perspektiven
+        entstehen und nächste Schritte klarer werden.
     </p>
-
-   
-    <div class="booking-selection">
-
-        <label class="booking-option">
-            <input type="radio" name="service" value="energieCheck">
-            <div class="booking-card">
-                <span class="title">Energie-Check-up</span>
-                <span class="meta">ca. 30 Min · 45 €</span>
-            </div>
-        </label>
-
-        <label class="booking-option">
-            <input type="radio" name="service" value="intensivSession">
-            <div class="booking-card">
-                <span class="title">Intensiv-Session</span>
-                <span class="meta">ca. 90 Min · 95 €</span>
-            </div>
-        </label>
-
-        <label class="booking-option">
-            <input type="radio" name="service" value="chakraReinigung">
-            <div class="booking-card">
-                <span class="title">Chakra Reinigung</span>
-                <span class="meta">ca. 60 Min · 75 €</span>
-            </div>
-        </label>
-
+</div>
+        </div>
     </div>
-
-  
-    <button class="booking-button" onclick="openCalendly()">
-        Termin buchen
-    </button>
-
 </section>
--->
-<!-- =========================
-TERMIN (EINFACHE VERSION)
-========================= -->
-<section id="termin-simple" class="section">
 
-    <h2>Dein erster Schritt</h2>
-
+<section class="section legal-note">
     <p>
-        Du musst nicht genau wissen, wie es weitergeht.
-        Es reicht, dass du spürst: so wie es ist, soll es nicht bleiben.
+        Hinweis: AION ersetzt keine medizinische, psychotherapeutische oder heilkundliche Behandlung.
+        Es werden keine Diagnosen gestellt und keine Heilversprechen gegeben.
     </p>
-
-    <div class="booking-selection">
-
-        <label class="booking-option">
-            <input type="radio" name="service" value="intensivSession" checked>
-            <div class="booking-card">
-                <span class="title">Termin buchen</span>
-                <span class="meta">60 Minuten · 75 €</span>
-            </div>
-        </label>
-
-    </div>
-
-    <button class="booking-button" onclick="openCalendly()">
-        Termin buchen
-    </button>
-
 </section>
-<!-- =========================
-KONTAKT
-========================= -->
-<section id="kontakt" class="section">
 
+<section id="kontakt" class="section contact-section">
     <h2>Kontakt</h2>
 
     <p>
-        Du kannst mir jederzeit schreiben, wenn du Fragen hast oder etwas klären möchtest.
+        Du kannst mir schreiben, wenn du Fragen hast oder vorab etwas klären möchtest.
     </p>
 
-    <a href="mailto:sdek@gmx.de" class="btn-secondary">
+    <a href="mailto:info@aion-lebenszeit.de" class="btn-secondary">
         E-Mail senden
     </a>
-
 </section>
 
-<!-- =========================
-FOOTER
-========================= -->
 <footer class="footer">
-
-    <p>© 2026 AION – Klarheit. Energie. Balance.</p>
+    <p>© 2026 AION – Lebenszeit. Raum für Entwicklung.</p>
 
     <p>
         <a href="impressum.html">Impressum</a> |
         <a href="datenschutz.html">Datenschutz</a>
     </p>
-
 </footer>
 
 <script src="script.js"></script>
