@@ -422,56 +422,74 @@ p {
 }
 
 /* MOBILE */
-@media (max-width: 900px) {
-    .values-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .about-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .about-image {
-        max-width: 320px;
-        margin: 0 auto;
-    }
-
-    .offer-box {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-
 @media (max-width: 768px) {
+
     html {
         scroll-padding-top: 84px;
     }
 
+    /* HEADER */
     .header {
-        padding: 10px 22px;
+        padding: 12px 22px;
+    }
+
+    .nav {
+        min-height: 60px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 1002;
+    }
+
+    .logo a {
+        display: flex;
+        align-items: center;
     }
 
     .logo-img {
-        height: 42px;
+        display: block;
+        height: 52px;
+        width: auto;
+        flex-shrink: 0;
     }
 
+    /* HAMBURGER */
     .hamburger {
         display: block;
+        font-size: 1.8rem;
+        background: none;
+        border: none;
+        color: var(--petrol);
+        cursor: pointer;
+        z-index: 1002;
     }
 
+    /* MOBILE NAVIGATION */
     .nav-links {
         position: absolute;
-        top: 70px;
+        top: 84px;
         right: 0;
         left: 0;
+
         background: var(--off-white);
+
         flex-direction: column;
-        padding: 24px;
+        gap: 18px;
+
+        padding: 28px 24px;
+
         display: none;
+
         text-align: center;
+
         box-shadow: var(--shadow-soft);
+
         border-bottom: 1px solid rgba(197, 168, 120, 0.42);
+
+        z-index: 1001;
     }
 
     .nav-links.active {
@@ -482,21 +500,61 @@ p {
         display: none;
     }
 
+    /* HERO */
     .hero {
         padding: 90px 24px 80px;
     }
 
     .hero-brand {
-        font-size: clamp(2.7rem, 15vw, 4.2rem);
+        font-size: clamp(2.8rem, 15vw, 4.5rem);
         letter-spacing: 0.22em;
+        margin-bottom: 24px;
     }
 
+    h1 {
+        font-size: clamp(1.6rem, 7vw, 2.2rem);
+    }
+
+    .hero-subline {
+        font-size: 1.1rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    /* ALLGEMEINE SEKTIONEN */
     .section {
         padding: 70px 24px;
     }
 
-    .booking-card {
+    /* VALUES */
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* ÜBER MICH */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-image {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    /* ANGEBOT */
+    .offer-box {
         flex-direction: column;
         align-items: flex-start;
     }
+
+    /* BUCHUNG */
+    .booking-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
 }
